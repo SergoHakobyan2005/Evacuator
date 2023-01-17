@@ -1,0 +1,311 @@
+@media (max-width: 1920px) {
+    .background {
+        zoom: 50%;
+    }
+}
+@media (max-width: 1520px) {
+    .dropdown {
+        right: 0;
+        left: auto;
+    }
+}
+@media (max-width: 1450px) {
+    .header_content {
+        padding: 0 25px !important;
+    }
+}
+@media (max-width: 1310px) {
+    nav a {
+        font-size: 16px;
+    }
+    .content .txt {
+        padding: 0 20px;
+    }
+    .swiper-section {
+        width: auto;
+        padding: 0 60px;
+    }
+    .swiper-button-prev {
+        left: 15px !important;
+    }
+    .swiper-button-next {
+        right: 15px !important;
+    }
+}
+@media (max-width: 1110px) {
+    .background {
+        zoom: 30%;
+    }
+    .background .title-block, .arrow-down {
+        zoom: 150%;
+    }
+    .body-header-active {
+        overflow: hidden;
+    }
+    header {
+        height: 70px;
+    }
+    .header-active {
+        height: auto;
+        position: fixed;
+    }
+    .header_content {
+        height: 70px !important;
+        position: relative;
+        z-index: 99999;
+        background-color: #111;
+    }
+    .phone-language {
+        gap: 5px;
+    }
+    .burger-open-menu {
+        width: 100%;
+        height: calc(100vh - 70px);
+        position: relative;
+        background-color: #111;
+        z-index: 900;
+        border-top: 1px solid #222;
+        visibility: hidden;
+        opacity: 0;
+        top: -700px;
+        transition: .6s;
+        flex-direction: column;
+        display: flex !important;
+        overflow-y: auto;
+    }
+    .active-burger-menu {
+        visibility: visible;
+        opacity: 1;
+        top: 0;
+    }
+    .color-shadow {
+        position: relative;
+    }
+    .navigation_2 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .phone-part-2 {
+        padding: 40px 0;
+    }
+    .burger-open-menu .navigation_2 a, .burger-open-menu .phone-part-2 .phone {
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        text-align: center;
+    }
+    .phone-part-2 .phone {
+        font-size: 20px;
+    }
+    .logo_block_2 {
+        padding: 20px;
+    }
+    .logo_block_2 img {
+        width: 64px;
+    }
+    .logo_block img {
+        display: none;
+    }
+    .logo_block {
+        position: relative;
+        left: 0;
+        margin: 0;
+    }
+    .logo_block a {
+        left: 0;
+        gap: 15px;
+    }
+    .logo_block .logo_title {
+        font-size: 22px;
+        display: block;
+    }
+    .phone-language .phone-part {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .burger {
+        display: grid;
+    }
+    .burger-menu {
+        font-size: 35px;
+        color: white;
+    }
+    .title-block {
+        width: 45% !important;
+        padding: 30px !important;
+    }
+    .title-block .title {
+        font-size: 60px;
+    }
+    .content .txt {
+        font-size: 16.5px;
+    }
+    .language-slider-text {
+        font-size: 20px;
+    }
+    .swiper-button-prev:after, .swiper-button-next:after {
+        font-size: 32px !important;
+        font-weight: 600;
+    }
+    .modal .sd {
+        width: 600px !important;
+        height: 600px !important;
+    }
+    .contact .title {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .bottom_part {
+        padding: 0 25px;
+    }
+    .price_section {
+        padding: 60px 0 100px 0;
+    }
+    .contact {
+        padding: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .background {
+        zoom: 26%;
+    }
+    .background .title-block, .arrow-down {
+        zoom: 170%;
+    }
+    .service-wrapper {
+        grid-template-columns: auto auto;
+    }
+    .service-wrapper .service-1, .service-wrapper .service-3, .service-wrapper .service-5, .service-wrapper .service-7, .service-wrapper .service-9 {
+        background: none !important;
+    }
+    .service-wrapper .service-1, .service-wrapper .service-4, .service-wrapper .service-5, .service-wrapper .service-8, .service-wrapper .service-9 {
+        background-color: #ededed !important;
+    }
+    .modal .sd {
+        width: 560px !important;
+        height: 390px !important;
+        scale: .9;
+    }
+    .modal .closeIco {
+        right: -25px;
+    }
+    .up, .call {
+        bottom: 30px;
+    }
+    .active-up-button {
+        left: 30px;
+    }
+    .call-active {
+        right: 30px;
+    }
+    .contact {
+        padding: 30px;
+    }
+    .contact .title {
+        font-size: 26px;
+    }
+    .contact .footer-phone {
+        font-size: 18px;
+    }
+    .footer-part {
+        font-size: 14px;
+        letter-spacing: .5px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+}
+@media (max-width: 510px) {
+    .background {
+        background-position: 30%;
+    }
+    .logo_block img {
+        width: 64px;
+        display: block;
+    }
+    .logo_block .logo_title {
+        display: none;
+    }
+    .title-block {
+        width: 90% !important;
+        padding: 30px !important;
+    }
+    .title-block .title {
+        font-size: 46px;
+    }
+    .language-call-btn {
+        font-size: 28px;
+    }
+    section .content {
+        padding: 60px 0;
+    }
+    .content .txt {
+        font-size: 16px;
+    }
+    .price_content .head_part {
+        padding: 10px 25px;
+    }
+    .service-wrapper {
+        grid-template-columns: auto;
+    }
+    .service-wrapper .service-all {
+        max-width: 100%;
+    }
+    .service-wrapper .service-1, .service-wrapper .service-4, .service-wrapper .service-5, .service-wrapper .service-8, .service-wrapper .service-9 {
+        background: none !important;
+    }
+    .service-wrapper .service-1, .service-wrapper .service-3, .service-wrapper .service-5, .service-wrapper .service-7, .service-wrapper .service-9 {
+        background: #ededed !important;
+    }
+    .head_part .service {
+        width: auto;
+        max-width: 70%;
+    }
+    .contact .title {
+        font-size: 22px;
+    }
+    .contact .footer-phone {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+    .slider-section {
+        padding: 50px 0 70px 0;
+    }
+    .language-slider-text {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+}
+@media (max-width: 390px) {
+    .swiper-section {
+        padding: 0 25px;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: none !important;
+    }
+    .modal .sd {
+        scale: 1;
+        zoom: 80%;
+    }
+    .call {
+        padding: 7px !important;
+    }
+    .arrow-up {
+        font-size: 40px;
+    }
+}
+@media (max-width: 290px) {
+    h2 {
+        font-size: 24px;
+    }
+    .language-slider-text {
+        font-size: 16px;
+    }
+}

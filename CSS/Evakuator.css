@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+nav a, .lang-change, .lng .dropdown .btn, .d .slider-title, h2, .footer-part, .footer-logo a {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.contact .title, .service-all h4, .service-all p {
+    font-family: 'Noto Sans Armenian', sans-serif;
+}
+
+/* USEFUL CODE */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar, .burger-open-menu::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgb(116, 116, 116);
+}
+
+body::-webkit-scrollbar-thumb, .burger-open-menu::-webkit-scrollbar-thumb {
+    background-color: rgb(58, 58, 58);
+}
+
+:root {
+    --headerBackground: rgba(255, 255, 255, 0.178);
+    --headerShadow: 0 -1px 15px 0 rgba(69, 122, 219, 0.185);
+    --rubikFont: 20px 'Rubik';
+    --nav: bolder 16px/120% 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --contentTitle: bold 72px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --contentText: 300 20px/1.6 'Noto Sans Armenian', sans-serif;
+    --sliderText: 300 22.5px/1.6 'Noto Sans Armenian', sans-serif;
+    --priceShadow: 0 -1px 15px 0 rgba(71, 71, 71, 0.185);
+    --priceHead: 20px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --priceText: 16px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --transition: calc(.3s);
+    --callBtn: 36px sans-serif;
+    --phoneFont: 18px 'Open Sans', sans-serif;
+}
+
+.logo_block, .bottom_part .list .number, .background, .color-shadow, .background .title-block, .phone-language, .logo_block a, .logo_block_2, .active_modal, .contact, footer, .footer-logo a, .call, .price_section .bottom_part, .burger-open-menu {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header_content, nav, nav a, .price_content .head_part, .head_part .service, .head_part .price, section .content, .lng, footer, footer .icon-part, .dropdown .btn {
+    display: flex;
+}
+
+.head_part .service, .head_part .price {
+    justify-content: center;
+}
+
+header .header_content, nav, nav a, .price_content .head_part, .bottom_part .list, section .content, .lng, .dropdown .btn {
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo_block img, nav a, .modal .closeIco, .swiper-slide, .call, .up, .arrow-down, .lng, .dropdown .btn {
+    cursor: pointer;
+}
+
+/* USEFUL CODE */
+
+header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header .header_content {
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo_block {
+    position: absolute;
+    margin: 0 auto;
+    left: 50%;
+}
+
+.logo_block img {
+    width: 82px;
+}
+
+.logo_block a {
+    position: relative;
+    left: -50%;
+}
+
+.logo_block .logo_title {
+    font: var(--rubikFont);
+    color: white;
+    display: none;
+}
+
+.burger-open-menu {
+    display: none !important;
+}
+
+.burger {
+    display: none;
+    gap: 7px;
+}
+
+.burger-stick {
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+
+.active-stick-2 {
+    scale: 0;
+}
+
+.active-stick-1 {
+    rotate: 45deg;
+    top: 10px;
+}
+
+.active-stick-3 {
+    rotate: -45deg;
+    bottom: 10px;
+}
+
+nav {
+    height: 100%;
+    gap: 20px;
+}
+
+nav a {
+    transition: var(--transition);
+    font: var(--nav);
+    color: white;
+    position: relative;
+}
+
+nav a::selection {
+    background: none;
+}
+
+nav a::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+nav a:hover::after  {
+    opacity: 1;
+    bottom: -10%;
+}
+
+nav .active_part {
+    background-color: #12396F;
+    color: white;
+}
+
+.phone-language {
+    gap: 30px;
+    justify-content: end;
+}
+
+.phone-part {
+    padding: 10px 15px;
+}
+
+.phone-part .phone {
+    color: white;
+    font: var(--phoneFont);
+}
+
+.arrow-down {
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    animation: arrow 1.8s infinite ease;
+    transition: all ease-in-out .3s;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.lang-change {
+    outline: none;
+    background: none;
+    border: none;
+    position: relative;
+    color: white;
+    padding: 10px;
+}
+
+.lng {
+    padding: 0px 8px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.lng::before {
+    content: '';
+    width: 20px;
+    height: 30px;
+    background: url(../Image/armenia.png) no-repeat 50% 50%;
+}
+
+.lng-flag-1::before {
+    background: url(../Image/armenia.png) no-repeat 50% 50% !important;
+}
+.lng-flag-2::before {
+    background: url(../Image/russia.png) no-repeat 50% 50% !important;
+}
+.lng-flag-3::before {
+    background: url(../Image/united-states.png) no-repeat 50% 50% !important;
+}
+
+.dropdown {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #414141;
+    left: 0;
+    top: 50px;
+    gap: 5px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.active-dropdown {
+    display: flex;
+}
+
+.dropdown .btn {
+    height: 30px;
+    padding: 10px;
+    gap: 7px;
+    color: white;
+    transition: var(--transition);
+}
+
+.dropdown .btn:hover {
+    background-color: rgba(100, 100, 100, 0.726);
+}
+
+.dropdown .btn::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+}
+
+.dropdown #AM::before {
+    background: url(../Image/armenia.png) no-repeat 50% 50% !important;
+}
+
+.dropdown #RU::before {
+    background: url(../Image/russia.png) no-repeat 50% 50% !important;
+}
+
+.dropdown #EN::before {
+    background: url(../Image/united-states.png) no-repeat 50% 50% !important;
+}
+
+.background-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.color-shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    zoom: 70%;
+    background: url(../Image/towtruckbackground.jpg) no-repeat 50% 50%;
+}
+
+section .content {
+    flex-direction: column;
+    padding: 70px 0;
+}
+
+.background .title-block {
+    width: 30%;
+    min-height: 30%;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 10px;
+    gap: 50px;
+}
+
+.background .title {
+    font: var(--contentTitle);
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: normal;
+    color: #414141;
+}
+
+.content .txt {
+    max-width: 1300px;
+    font: var(--contentText);
+    color: #414141;
+    text-align: center;
+}
+
+.content .txt p {
+    margin-bottom: 30px;
+    word-spacing: 1.3px;
+}
+
+.slider-section {
+    width: 100%;
+    background-color: #ededed;
+    padding: 60px 0 100px 0;
+}
+
+.slider-section .language-slider-title {
+    margin-bottom: 30px;
+}
+
+.swiper-section {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.swiper {
+    width: 100%;
+    height: 345px;
+}
+
+.swiper-button-prev {
+    color: #3A3A3A !important;
+    left: -60px !important;
+}
+.swiper-button-next {
+    color: #3A3A3A !important;
+    right: -60px !important;
+}
+
+.language-slider-text {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    word-spacing: 1.3px;
+    font: var(--sliderText);
+    padding: 0 40px;
+    text-align: center;
+}
+
+.sd {
+    height: 345px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: var(--transition);
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: none;
+    background: #000000d8;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+}
+
+.modal .sd {
+    width: 768px !important;
+    height: 100% !important;
+    max-height: 768px !important;
+    display: block;
+    position: relative;
+}
+
+.modal .closeIco {
+    position: absolute;
+    top: 0;
+    right: -35px;
+    font-size: 25px;
+    color: gray;
+    transition: var(--transition);
+}
+
+.modal .closeIco:hover {
+    color: rgba(128, 128, 128, 0.671);
+}
+
+.price_section {
+    width: 100%;
+    padding: 80px 0 100px 0;
+}
+
+.price_section h2 {
+    margin-bottom: 25px;
+}
+
+.service-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.service-wrapper .service-1, .service-wrapper .service-3, .service-wrapper .service-5, .service-wrapper .service-7, .service-wrapper .service-9 {
+    background-color: #ededed;
+}
+
+.service-wrapper .service-all {
+    max-width: 300px;
+    padding: 30px;
+    display: grid;
+    gap: 15px;
+    border-radius: 20px;
+}
+
+.service-all h4, .service-all p {
+    background: none !important;
+    line-height: 1.4;
+}
+
+.service-all h4 {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.service-all p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.call {
+    position: fixed;
+    right: -100px;
+    bottom: 50px;
+    border: 3px solid #3a3d52;
+    padding: 10px;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    z-index: 100;
+}
+
+.call-active {
+    visibility: visible;
+    opacity: 1;
+    right: 50px;
+}
+
+.call i {
+    font-size: 20px;
+    color: #3a3d52;
+    rotate: 265deg;
+}
+
+.up {
+    position: fixed;
+    left: -100px;
+    bottom: 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    z-index: 100;
+}
+
+.active-up-button {
+    visibility: visible;
+    opacity: 1;
+    left: 50px;
+}
+
+.arrow-up {
+    font-size: 46px;
+    color: #3a3d52;
+}
+
+.language-call-btn {
+    border: 1px solid white;
+    padding: 30px 40px;
+    color: white;
+    font: var(--callBtn);
+    transition: .5s;
+    letter-spacing: 2px;
+}
+
+.language-call-btn:hover {
+    background: white;
+    color: black;
+}
+
+footer {
+    width: 100%;
+    background-color: #292929;
+    flex-direction: column;
+}
+
+.contact {
+    width: 100%;
+    padding: 50px;
+    flex-direction: column;
+    color: white;
+}
+
+.contact .title {
+    margin: 25px 0;
+}
+
+.contact .title {
+    font-size: 38px;
+    color: white;
+}
+
+.contact .footer-phone {
+    color: #dddddd;
+    margin-bottom: 15px;
+    font: 200 20px sans-serif;
+}
+
+footer .icon-part {
+    gap: 15px;
+}
+
+footer .icon-part img {
+    width: 36px;
+}
+
+.footer-part {
+    width: 100%;
+    padding: 30px;
+    border-top: 1px solid rgb(65, 65, 65);
+    color: rgb(160, 160, 160);
+    text-align: center;
+}
+
+.footer-logo {
+    margin-top: 30px;
+}
+
+.footer-logo a {
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+    gap: 8px;
+}
+
+.footer-logo img {
+    width: 64px;
+}
