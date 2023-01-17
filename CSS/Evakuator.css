@@ -6,7 +6,7 @@ nav a, .lang-change, .lng .dropdown .btn, .d .slider-title, h2, .footer-part, .f
     font-family: 'Open Sans', sans-serif !important;
 }
 
-.contact .title, .service-all h4, .service-all p {
+.contact .title, .service-all h3, .service-all p {
     font-family: 'Noto Sans Armenian', sans-serif;
 }
 
@@ -467,12 +467,12 @@ h2 {
     border-radius: 20px;
 }
 
-.service-all h4, .service-all p {
+.service-all h3, .service-all p {
     background: none !important;
     line-height: 1.4;
 }
 
-.service-all h4 {
+.service-all h3 {
     font-size: 19px;
     font-weight: 500;
 }
